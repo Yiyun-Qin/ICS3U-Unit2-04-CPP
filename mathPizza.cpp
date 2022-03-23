@@ -12,7 +12,7 @@ int main() {
     const float LABOR = 0.75;
     const float RENT = 1.00;
     const float MATERIAL_PER_INCH = 0.50;
-    const float taxNumber = 0.13;
+    const float TAX_NUMBER = 0.13;
 
     int diameter;
     float untaxedPrice;
@@ -25,7 +25,7 @@ int main() {
 
     // process
     untaxedPrice = LABOR + RENT + MATERIAL_PER_INCH * diameter;
-    HST = untaxedPrice * taxNumber;
+    HST = untaxedPrice * TAX_NUMBER;
     totalCost = untaxedPrice + HST;
 
     // output
